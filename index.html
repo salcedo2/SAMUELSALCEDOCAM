@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Samuelsalcedocam | Fotografía Profesional</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <link href="styles1.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(77, 76, 73, 0.7);">
+        <div class="container">
+            <a class="navbar-brand" href="#">Samuelsalcedocam</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container text-center">
+            <h1 class="display-4">Captura el Momento Perfecto</h1>
+            <p class="lead">Fotografía profesional para cada ocasión.</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Contáctame</a>
+            <a href="#contact" class="btn btn-primary btn-lg">Servicios</a>
+        </div>
+    </section>
+
+    <!-- Galería con Swiper.js -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Galería de Fotografías</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/pixelcut-export.jpg" alt="Foto 1"></div>
+                    <div class="swiper-slide"><img src="images/pixelcut-export (1).jpg" alt="Foto 2"></div>
+                    <div class="swiper-slide"><img src="images/images/g1.jpg" alt="Foto 3"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acerca de -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="display-5 mb-3">Sobre Samuel Salcedo</h2>
+                    <p class="lead">Fotógrafo profesional con un enfoque único en capturar momentos auténticos y emocionantes. A lo largo de mi carrera, he trabajado en diferentes áreas de la fotografía, brindando imágenes de alta calidad para todo tipo de eventos.</p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="images/samuel-removebg-preview.png" class="img-fluid rounded-circle shadow-lg" alt="Samuel Salcedo" style="max-width: 300px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="text-center">Lo que dicen mis clientes</h2>
+    
+            <div class="testimonial-card">
+                <img src="images/juli.jpg" alt="Cliente 1" class="testimonial-img">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"El mejor fotógrafo con el que hemos trabajado. Capturó todos nuestros momentos especiales con un toque único."</p>
+                    <h5 class="testimonial-name">- Cliente Feliz</h5>
+                </div>
+            </div>
+    
+            <div class="testimonial-card">
+                <img src="images/testi1.jpg" alt="Cliente 2" class="testimonial-img">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"Su trabajo es simplemente impresionante. Las fotos fueron más allá de lo que imaginamos."</p>
+                    <h5 class="testimonial-name">- Cliente Satisfecho</h5>
+                </div>
+            </div>
+    
+            <div class="testimonial-card">
+                <img src="images/testi2 (1).jpg" alt="Cliente 3" class="testimonial-img">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"Recomiendo a Samuel para cualquier evento. No solo es profesional, sino también muy creativo."</p>
+                    <h5 class="testimonial-name">- Cliente Agradecido</h5>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+
+    <!-- Formulario de Contacto -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <form action="submit-form.php" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+        <div class="container">
+            <p>&copy; 2025 Samuel Salcedo | Todos los derechos reservados</p>
+            <div>
+                <a href="https://www.facebook.com/profile.php?id=61550016309912" class="text-white mx-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white mx-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-3"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+     <!-- Scripts necesarios -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+     <script>
+         var swiper = new Swiper(".testimonial-slider", {
+             loop: true,
+             autoplay: {
+                 delay: 5000,
+                 disableOnInteraction: false,
+             },
+             pagination: {
+                 el: ".swiper-pagination",
+                 clickable: true,
+             },
+             navigation: {
+                 nextEl: ".swiper-button-next",
+                 prevEl: ".swiper-button-prev",
+             },
+         });
+     </script>
+    <!-- Swiper.js y Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!-- Botones flotantes de WhatsApp y Facebook -->
+<div class="floating-buttons">
+    <a href="https://wa.me/tu-numero" target="_blank" class="whatsapp-btn">
+        <img src="images/whaa.png" alt="WhatsApp">
+    </a>
+    <a href="https://www.facebook.com/tu-pagina" target="_blank" class="facebook-btn">
+        <img src="images/mess.png" alt="Facebook">
+    </a>
+</div>
+</body>
+</html>
